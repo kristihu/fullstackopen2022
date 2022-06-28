@@ -1,0 +1,6 @@
+Kun nappia painetaa, uusi 'note' lähtee palvelimelle POST metodilla.
+Se sisältää kentät: date ja content
+palvelimelta tulee vastaus: Note created
+Single page versiossa sivun uudelleenlautausta ei tapahdu tässä vaiheessa (e.preventdefault()), vaan 
+spa.js tiedostossa oleva koodi hoitaa uuden noten lisäämisen listaan ja uuden listan renderöimisen
+sivulle

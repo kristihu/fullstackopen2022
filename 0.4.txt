@@ -1,0 +1,14 @@
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+palvelin-->selain: main.js
+
+selain->palvelin: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+palvelin palauttaa new_note, notes, main.css, main.js, data.json
+selain lataa uudelleen notes sivun 
+
+selain lähettää palvelimelle uuden GET pyynnön, joka hakee data.json uuden datan 
+tapahtumankäsittelijä renderöi kaikki "notet" mukaanlukien juuri uuden lisätyn
+ 

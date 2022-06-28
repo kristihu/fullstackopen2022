@@ -1,0 +1,9 @@
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+palvelin-->selain: HTML-koodi
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+palvelin-->selain: spa.js
+
+selain lähettää palvelimelle spa.js koodin myötä, saa sieltä vastauksen json-muodossa
+ja sen jälkeen lisää sivulle muistiinpanoja edustavat elementit
